@@ -1,6 +1,8 @@
 # Repo para EIEC - DevOps - UNIR
 
-Este repositorio nos servirá para demostrar el uso de Git en la asignatura de EIEC y muchas cosas mas.
+Este repositorio nos servirá para demostrar el uso de Git en la asignatura de EIEC y muchas cosas más.
+
+Para esta práctica se han realizado cambio en los archivos de esta aplicación.
 
 ---
 
