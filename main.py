@@ -13,7 +13,7 @@ DEFAULT_ORDER_ASCENDING = True
 
 def sort_list(items, ascending=True):
     if not isinstance(items, list):
-        raise RuntimeError(f"Cannot sort {type(items)}")
+        raise RuntimeError(f"No es posible ordenar elementos de tipo {type(items)}.")
 
     return sorted(items, reverse=(not ascending))
 
@@ -33,9 +33,9 @@ if __name__ == "__main__":
         ascending_order = sys.argv[3].lower() == "asc"
     else:
         print("Usage: python3 main.py <filename> <remove_duplicates> <order>")
-        print(" - <filename>: Path to the file containing the words list.")
-        print(" - <remove_duplicates>: yes|no, indicates whether to remove duplicates.")
-        print(" - <order>: asc|desc, indicates whether to sort ascending or descending.")
+        print(" - <filename>: Debe proporcionar el fichero como primer argumento.")
+        print(" - <remove_duplicates>: yes|no, el segundo argumento determina si se deben eliminar los duplicados.")
+        print(" - <order>: asc|desc, el tercer argumento indica si se ordena de forma ascendente o descendente.")
         sys.exit(1)
 
     print(f"Reading words from file {filename}")
