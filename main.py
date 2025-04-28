@@ -12,7 +12,7 @@ DEFAULT_DUPLICATES = False
 
 def sort_list(items, ascending=True):
     if not isinstance(items, list):
-        raise RuntimeError(f"No puede ordenar {type(items)}")
+        raise RuntimeError(f"No es posible ordenar elementos de tipo {type(items)}.")
 
     return sorted(items, reverse=(not ascending))
 
@@ -28,8 +28,8 @@ if __name__ == "__main__":
         filename = sys.argv[1]
         remove_duplicates = sys.argv[2].lower() == "yes"
     else:
-        print("Se debe indicar el fichero como primer argumento")
-        print("El segundo argumento indica si se quieren eliminar duplicados")
+        print("Debe proporcionar el fichero como primer argumento.")
+        print("El segundo argumento determina si se deben eliminar los duplicados.")
         sys.exit(1)
 
     print(f"Se leerán las palabras del fichero {filename}")
